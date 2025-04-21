@@ -1,0 +1,30 @@
+{
+  "name": "cc_20_tour_selector",
+  "version": "1.0.0",
+  "description": "This project is a React application built using Vite. It showcases a gallery of tours with the ability to filter by destination and remove tours from the list.",
+  "main": "vite.config.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devenbeck/cc_20_tour_selector.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devenbeck/cc_20_tour_selector/issues"
+  },
+  "homepage": "https://github.com/devenbeck/cc_20_tour_selector#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.4.1",
+    "vite": "^6.3.2"
+  }
+}
