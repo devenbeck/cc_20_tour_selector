@@ -2,12 +2,19 @@ import React from "react";
 import TourCard from "./TourCard";
 
 const Gallery = ({ tours, setTours }) => {
-    // Function to handle removing a tour
     const handleRemoveTour = (id) => {
         setTours((prevTours) => prevTours.filter((tour) => tour.id !== id));
     };
 
-    // Render the list of tours
+    if (tours.length === 0) {
+        return (
+            <div className="empty-state">
+                <h2>No tours left</h2>
+                <button onClick={() => window.location.reload()}>Refresh</button>
+            </div>
+        );
+    }
+
     return (
         <section className="tour-list">
             {tours.map((tour) => (
