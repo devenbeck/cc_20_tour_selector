@@ -1,11 +1,15 @@
 import React from "react";
 
-const TourCard = ({ id, name, info, onRemove }) => {
+const TourCard = ({ id, name, info, image, price, onRemove }) => {
     return (
         <article className="tour-card">
-            <h2>{name}</h2>
-            <p>{info}</p>
-            <button onClick={() => onRemove(id)}>Remove Tour</button>
+            <img src={image} alt={name} />
+            <div className="tour-info">
+                <h3>{name}</h3>
+                <p>{info}</p>
+                <h4>${price}</h4>
+                <button onClick={() => onRemove(id)}>Not Interested</button>
+            </div>
         </article>
     );
 };

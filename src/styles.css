@@ -7,3 +7,53 @@ select {  /*make dropdown button more stylish*/
     border-radius: 5px;
     margin-bottom: 1rem;
 }
+
+.tour-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.tour-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tour-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.tour-info {
+    padding: 1rem;
+}
+
+.tour-info h3 {
+    margin: 0 0 0.5rem;
+}
+
+.tour-info p {
+    margin: 0 0 1rem;
+}
+
+.tour-info h4 {
+    margin: 0 0 1rem;
+    color: #007bff;
+}
+
+.tour-info button {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tour-info button:hover {
+    background-color: #ff4c4c;
+}
